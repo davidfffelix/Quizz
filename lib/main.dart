@@ -27,9 +27,9 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
 
-  List<Icon> marcadorPontos = [
+  List<Icon> marcadorPontos = [];
 
-  ];
+  List<String> perguntas
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +68,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                
+
               },
             ),
           ),
@@ -102,7 +102,7 @@ class _QuizPageState extends State<QuizPage> {
 }
 
 /*
-pergunta1: 'O metrô é um dos meios de transporte mais seguros do mundo', verdadeiro,
-pergunta2: 'A culinária brasileira é uma das melhores do mundo.', verdadeiro,
-pergunta3: 'Vacas podem voar, assim como peixes utilizam os pés para andar.', falso,
+pergunta1: 'Luxemburgo é o mais rico do mundo', verdadeiro,
+pergunta2: 'Avatar é o filme com maior bilheteria da história', verdadeiro,
+pergunta3: 'Felipe Massa pilotou pela Mercedes', falso,
 */
