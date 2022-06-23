@@ -28,25 +28,7 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorPontos = [
-    Icon(
-      Icons.check,
-      color: Colors.green,
-  ),
 
-    Icon(
-      Icons.close,
-      color: Colors.red,
-    ),
-
-    Icon(
-      Icons.check,
-      color: Colors.green,
-    ),
-
-    Icon(
-      Icons.close,
-      color: Colors.red,
-    ),
   ];
 
   @override
@@ -86,9 +68,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                setState((){
-                  marcadorPontos.add(Icon(Icons.check, color: Colors.green));
-                });
+                
               },
             ),
           ),
@@ -108,7 +88,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                //O usuário clica no botão falso.
+
               },
             ),
           ),
