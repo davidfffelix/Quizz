@@ -29,7 +29,11 @@ class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorPontos = [];
 
-  List<String> perguntas
+  List<String> perguntas = [
+    'Luxemburgo é o mais rico do mundo',
+    'Avatar é o filme com maior bilheteria da história',
+    'Felipe Massa pilotou pela Mercedes'
+  ];
 
   @override
   Widget build(BuildContext context) {
