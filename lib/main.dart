@@ -47,7 +47,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10),
             child: Center(
               child: Text(
-                'As perguntas serão exibidas aqui.',
+                perguntas[0],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
