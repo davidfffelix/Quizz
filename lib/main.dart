@@ -35,6 +35,8 @@ class _QuizPageState extends State<QuizPage> {
     'Felipe Massa pilotou pela Mercedes'
   ];
 
+  int numeroDaQuestaoAtual = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -47,7 +49,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10),
             child: Center(
               child: Text(
-                perguntas[0],
+                perguntas[numeroDaQuestaoAtual],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
@@ -72,7 +74,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-
+                numeroDaQuestaAtual++;
               },
             ),
           ),
