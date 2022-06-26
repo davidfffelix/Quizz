@@ -30,7 +30,7 @@ class _QuizPageState extends State<QuizPage> {
   List<Icon> marcadorPontos = [];
 
   List<String> perguntas = [
-    'Luxemburgo é o mais rico do mundo',
+    'Luxemburgo é o país mais rico do mundo',
     'Avatar é o filme com maior bilheteria da história',
     'Felipe Massa pilotou pela Mercedes'
   ];
@@ -106,7 +106,7 @@ class _QuizPageState extends State<QuizPage> {
 }
 
 /*
-pergunta1: 'Luxemburgo é o mais rico do mundo', verdadeiro,
+pergunta1: 'Luxemburgo é o país mais rico do mundo', verdadeiro,
 pergunta2: 'Avatar é o filme com maior bilheteria da história', verdadeiro,
 pergunta3: 'Felipe Massa pilotou pela Mercedes', falso,
 */
