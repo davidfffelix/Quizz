@@ -74,7 +74,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                numeroDaQuestaAtual++;
+                numeroDaQuestaoAtual++;
               },
             ),
           ),
@@ -94,7 +94,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-
+                numeroDaQuestaoAtual++;
               },
             ),
           ),
