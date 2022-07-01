@@ -30,9 +30,15 @@ class _QuizPageState extends State<QuizPage> {
   List<Icon> marcadorPontos = [];
 
   List<String> perguntas = [
-    'Luxemburgo é o país mais rico do mundo',
-    'Avatar é o filme com maior bilheteria da história',
-    'Felipe Massa pilotou pela Mercedes'
+    'Luxemburgo é o país mais rico do mundo.',
+    'Avatar é o filme com maior bilheteria da história.',
+    'Felipe Massa pilotou pela Mercedes.'
+  ];
+
+  List<bool> respostas = [
+    true,
+    true,
+    false,
   ];
 
   int numeroDaQuestaoAtual = 0;
