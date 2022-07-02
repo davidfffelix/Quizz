@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'perguntas.dart';
 
 void main() => runApp(Quizz());
 
@@ -40,6 +41,8 @@ class _QuizPageState extends State<QuizPage> {
     true,
     false,
   ];
+
+  Pergunta p1 = Pergunta(q: 'Luxemburgo é o país mais rico do mundo.', r: true,);
 
   int numeroDaQuestaoAtual = 0;
 
