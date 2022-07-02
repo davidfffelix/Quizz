@@ -80,6 +80,14 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
+                bool respostaCerta = respostas[numeroDaQuestaoAtual];
+
+                if(respostaCerta == true){
+                  print('Resposta Certa!');
+                }else{
+                  print('Resposta Errada!');
+                }
+
                 setState(() {
                   numeroDaQuestaoAtual++;
                 });
@@ -102,6 +110,14 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
+                bool respostaCerta = respostas[numeroDaQuestaoAtual];
+
+                if(respostaCerta == false){
+                  print('Resposta Certa!');
+                }else{
+                  print('Resposta Errada!');
+                }
+
                 setState(() {
                   numeroDaQuestaoAtual++;
                 });
