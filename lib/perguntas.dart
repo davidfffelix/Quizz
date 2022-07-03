@@ -1,9 +1,14 @@
 class Pergunta{
-  String questao;
-  bool respostaDaQuestao;
+  String? questao;
+  bool? respostaDaQuestao;
 
-  Pergunta({String? q, bool? r}) { //Construtor
-    questao = q;
-    respostaDaQuestao = r;
+/*  Pergunta({String? questao, bool? respostaDaQuestao}) { //Construtor
+    this.questao = questao;
+    this.respostaDaQuestao = respostaDaQuestao;
+  }
+*/
+
+  Pergunta({this.questao, this.respostaDaQuestao}) { //Construtor
   }
 }
+

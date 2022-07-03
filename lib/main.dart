@@ -42,7 +42,12 @@ class _QuizPageState extends State<QuizPage> {
     false,
   ];
 
-  Pergunta p1 = Pergunta(q: 'Luxemburgo é o país mais rico do mundo.', r: true,);
+  Pergunta p1 = Pergunta(
+    questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,
+  );
+  Pergunta p2 = Pergunta(
+    questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,
+  );
 
   int numeroDaQuestaoAtual = 0;
 
