@@ -42,9 +42,9 @@ class _QuizPageState extends State<QuizPage> {
    */
 
   List<Pergunta> bancoDePerguntas = [
-    Pergunta(questao: 'Felipe Massa pilotou pela Mercedes.', respostaDaQuestao: false,), // 1° objeto
-    Pergunta(questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,), // 2° objeto
-    Pergunta(questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,), // 3° objeto
+    Pergunta(questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,), // 1° objeto
+    Pergunta(questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,), // 2° objeto
+    Pergunta(questao: 'Felipe Massa pilotou pela Mercedes.', respostaDaQuestao: false,), // 3° objeto
   ];
 
   int numeroDaQuestaoAtual = 0;
@@ -63,7 +63,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10),
             child: Center(
               child: Text(
-                bancoDePerguntas[numeroDaQuestaoAtual].questao,
+                bancoDePerguntas[numeroDaQuestaoAtual].questao!,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
@@ -88,7 +88,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
+                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao!;
 
                 if(respostaCerta == true){
                   print('Resposta Certa!');
@@ -118,7 +118,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
+                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao!;
 
                 if(respostaCerta == false){
                   print('Resposta Certa!');
