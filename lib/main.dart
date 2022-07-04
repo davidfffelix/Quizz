@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'perguntas.dart';
+import 'pergunta.dart';
 
 void main() => runApp(Quizz());
 
@@ -30,29 +30,29 @@ class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorPontos = [];
 
-  List<String> perguntas = [
-    'Luxemburgo é o país mais rico do mundo.', // Verdadeiro
-    'Avatar é o filme com maior bilheteria da história.', // Verdadeiro
-    'Felipe Massa pilotou pela Mercedes.' // Falso
-  ];
-
-  List<bool> respostas = [
-    true,
-    true,
-    false,
-  ];
-
-  Pergunta p1 = Pergunta(
+  /*Pergunta p1 = Pergunta(
     questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,
   );
   Pergunta p2 = Pergunta(
     questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,
   );
+  Pergunta p3 = Pergunta(
+    questao: 'Felipe Massa pilotou pela Mercedes.', respostaDaQuestao: false,
+  );
+   */
+
+  List<Pergunta> bancoDePerguntas = [
+    Pergunta(questao: 'Felipe Massa pilotou pela Mercedes.', respostaDaQuestao: false,), // 1° objeto
+    Pergunta(questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,), // 2° objeto
+    Pergunta(questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,), // 3° objeto
+  ];
 
   int numeroDaQuestaoAtual = 0;
 
   @override
   Widget build(BuildContext context) {
+
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -63,7 +63,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10),
             child: Center(
               child: Text(
-                perguntas[numeroDaQuestaoAtual],
+                bancoDePerguntas[numeroDaQuestaoAtual].questao,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
@@ -88,7 +88,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool respostaCerta = respostas[numeroDaQuestaoAtual];
+                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
 
                 if(respostaCerta == true){
                   print('Resposta Certa!');
@@ -118,7 +118,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool respostaCerta = respostas[numeroDaQuestaoAtual];
+                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao;
 
                 if(respostaCerta == false){
                   print('Resposta Certa!');
