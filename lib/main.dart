@@ -63,7 +63,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10),
             child: Center(
               child: Text(
-                bancoDePerguntas[numeroDaQuestaoAtual].questao!,
+                bancoDePerguntas[numeroDaQuestaoAtual].questao!, //Exclamação resolveu o problema do null
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
@@ -88,7 +88,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao!;
+                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao!; //Exclamação resolveu o problema do null
 
                 if(respostaCerta == true){
                   print('Resposta Certa!');
