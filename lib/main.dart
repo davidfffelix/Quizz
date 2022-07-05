@@ -118,7 +118,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao!;
+                bool respostaCerta = bancoDePerguntas[numeroDaQuestaoAtual].respostaDaQuestao!; //Exclamação resolveu o problema do null
 
                 if(respostaCerta == false){
                   print('Resposta Certa!');
