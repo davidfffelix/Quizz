@@ -36,10 +36,7 @@ class _QuizPageState extends State<QuizPage> {
   Pergunta p2 = Pergunta(
     questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,
   );
-  Pergunta p3 = Pergunta(
-    questao: 'Felipe Massa pilotou pela Mercedes.', respostaDaQuestao: false,
-  );
-   */
+
 
   List<Pergunta> bancoDePerguntas = [
     Pergunta(questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,), // 1° objeto
