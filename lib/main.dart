@@ -30,12 +30,6 @@ class _QuizPageState extends State<QuizPage> {
 
   List<Icon> marcadorPontos = [];
 
-  /*Pergunta p1 = Pergunta(
-    questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,
-  );
-
-
-
   List<Pergunta> bancoDePerguntas = [
     Pergunta(questao: 'Luxemburgo é o país mais rico do mundo.', respostaDaQuestao: true,), // 1° objeto
     Pergunta(questao: 'Avatar é o filme com maior bilheteria da história.', respostaDaQuestao: true,), // 2° objeto
